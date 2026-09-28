@@ -1,0 +1,1 @@
+const r=document.querySelectorAll("[data-video]");if(r.length&&"IntersectionObserver"in window){const n=new IntersectionObserver(e=>{for(const t of e){if(!t.isIntersecting)continue;const o=t.target;o.preload==="none"&&(o.preload="metadata"),n.unobserve(o)}},{rootMargin:"400px"});for(const e of r)n.observe(e)}
