@@ -1,0 +1,10 @@
+# Cloudflare deploys the `gh-pages` branch as-is, so the asset directory is
+# the checkout root and everything in it is uploaded unless listed here.
+# `.git` is the one that matters: its packfile is over the 25 MiB asset limit.
+.git
+.wrangler
+wrangler.jsonc
+
+# GitHub Pages plumbing written by `pub.sh`.
+CNAME
+.nojekyll

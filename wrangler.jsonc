@@ -1,0 +1,13 @@
+// Lives in `public/` rather than the repo root because Cloudflare never sees
+// this branch: it deploys `gh-pages`, where `pub.sh` has already put the built
+// site at the root. Hence `directory: "."`, with `.assetsignore` beside it
+// keeping `.git` out of the upload.
+{
+	"name": "va3ndf-com",
+	"compatibility_date": "2026-10-06",
+	"assets": {
+		"directory": ".",
+		// Serve `404.html` for unknown paths, as GitHub Pages does by default.
+		"not_found_handling": "404-page"
+	}
+}
